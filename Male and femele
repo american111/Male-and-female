@@ -1,0 +1,14 @@
+ism = input('Ismingizni kiriting: ').capitalize()
+familiya = input('Familiyanginzi kiritiing: ').capitalize()
+yosh = int(input('Yoshingiz nechida? '))
+a = familiya[-1]
+if a == 'a' and yosh>15:
+    print(f'Assalomu alaykum {ism} opa')
+elif a != 'a' and yosh>15:
+    print(f'Assalomu alaykum {ism} aka')
+elif a == 'a' and yosh==15:
+    print(f'{ism} o`rtog` qalesan')
+elif a != 'a' and yosh==15:
+    print(f'{ism} do`stim qalesan')
+else:
+    print(f'{ism} qalesan')
